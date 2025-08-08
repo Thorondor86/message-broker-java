@@ -1,0 +1,11 @@
+syntax = "proto2";
+package example;
+
+option java_package = "com.example.proto";
+option java_outer_classname = "PersonProto";
+
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+}
